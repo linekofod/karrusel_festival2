@@ -31,13 +31,13 @@ const data = await fetch(
   </div>
 
   <div class="card">
-    <!-- {
+    {
       data
         .filter((artist) => artist.date === "THURSDAY")
         .map((artist) => {
           return <ArtistCards data={artist} />;
         })
-    } -->
+    }
   </div>
   <div class="SeeAllArtist_button button_flex">
     <Button size="box" type="web" link_to="/lineup">See all artist</Button>
