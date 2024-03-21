@@ -3,7 +3,7 @@ import Button from "./Button.astro";
 const { data } = Astro.props;
 ---
 
-<a href={`artist/${data.slug}`}>
+<a href={`./artist/${data.slug}`}>
   <article>
     <figure class="card_background">
       <img src=`../../imgs/lineup/${data.image}` alt="" />
