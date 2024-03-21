@@ -2,7 +2,6 @@
 import "../styles/generel.css";
 import "../styles/lineup.css";
 import MainLayout from "../layouts/MainLayout.astro";
-import Cards from "../components/Cards.astro";
 import Button from "../components/Button.astro";
 import ArtistCards from "../components/ArtistCards.astro";
 
@@ -29,7 +28,11 @@ const data = await fetch(
           return <ArtistCards data={artist} />;
         })
     }
-    <img class="illustration_wave" src="../../pynt_boelger.svg" alt="" />
+    <img
+      class="illustration_wave"
+      src="../../imgs/illustrationer/pynt_boelger.svg"
+      alt=""
+    />
   </section>
 
   <!-- Program Friday -->
@@ -42,7 +45,11 @@ const data = await fetch(
           return <ArtistCards data={artist} />;
         })
     }
-    <img class="illustration_woman" src="../../dame_glow.svg" alt="" />
+    <img
+      class="illustration_woman"
+      src="../../imgs/illustrationer/dame_glow.svg"
+      alt=""
+    />
   </section>
 
   <!-- Program Saturday -->

@@ -6,7 +6,7 @@ const { data } = Astro.props;
 <a href={`artist/${data.slug}`}>
   <article>
     <figure class="card_background">
-      <img src=`../../img/lineup/${data.image}` alt="" />
+      <img src=`../../imgs/lineup/${data.image}` alt="" />
     </figure>
     <h3 class="h3_2">{data.name}</h3>
     <h4>{data.stage}</h4>
@@ -15,7 +15,7 @@ const { data } = Astro.props;
 
 <style>
   .card_background {
-    background-image: url("../../img/lineup/card_background.png");
+    background-image: url("../../imgs/lineup/card_background.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

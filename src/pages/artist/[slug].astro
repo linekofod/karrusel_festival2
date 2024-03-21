@@ -26,8 +26,8 @@ console.log(myData);
 ---
 
 <MainLayout>
-  <article">
-    <img class="background" src={`../../img/lineup/${myData.image}`} alt=" " />
+  <article>
+    <img class="background" src={`../../imgs/lineup/${myData.image}`} alt=" " />
     <div class="indhold_flex">
       <div class="information">
         <h3>LOCATION</h3>
@@ -49,7 +49,7 @@ console.log(myData);
         <Button size="box" type="web" link_to="/lineup">See all artists</Button>
       </div>
     </div>
-  </article">
+  </article>
 </MainLayout>
 
 <style>
@@ -73,11 +73,11 @@ console.log(myData);
     .indhold_flex {
       display: grid;
       grid-template-columns: 300px auto;
-      position: absolute;
       background-color: rgba(09, 09, 09, 0.5);
-      height: 50%;
+      height: auto;
       position: absolute;
       bottom: 0;
+      padding-bottom: 40px;
     }
     .information {
       display: flex;
@@ -88,13 +88,13 @@ console.log(myData);
       margin-bottom: 2em;
     }
     .artist_name {
-      margin: 2% 15% 0 20%;
+      margin: 2% 15% 0 8%;
     }
-    Button {
+    /* Button {
       width: 200px;
       margin-top: 50px;
       margin-bottom: 50px;
-    }
+    } */
   }
 
   @media screen and (max-width: 700px) {
