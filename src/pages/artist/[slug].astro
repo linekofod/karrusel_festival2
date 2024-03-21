@@ -25,6 +25,7 @@ const { myData } = Astro.props;
 console.log(myData);
 ---
 
+<title>{myData.name}</title>
 <MainLayout>
   <article>
     <img class="background" src={`../../imgs/lineup/${myData.image}`} alt=" " />
