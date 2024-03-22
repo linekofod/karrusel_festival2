@@ -71,6 +71,9 @@
     font-weight: 400;
     font-size: 28px;
 }
+.h2_2 {
+    font-weight: 600;
+  }
 
 .flex{
     display: flex;
