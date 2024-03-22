@@ -48,6 +48,9 @@
           left: 40%;
           transform: translate(-50%, -50%);
         }
+        #h2_index {
+            font-size: 20px !important;
+        }
         /* viser knappen i mobil view */
         .hero-button{
             display: contents;
@@ -66,7 +69,7 @@
 #h2_index{
     font-family: 'Rubik Glitch';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .flex{

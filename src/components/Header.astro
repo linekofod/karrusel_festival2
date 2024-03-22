@@ -21,10 +21,10 @@
         <a href="/about" class="nav-link">About</a>
       </li>
     </ul>
-    <div>
-      <p>22-24 august 2024</p>
+    <div class="date">
+      <p>22-24 AUG 2024</p>
     </div>
-    <div class="tickets">
+    <div class="flex_tickets">
       <a target="_blank" href="https://www.ticketmaster.dk/event/542817"
         >TICKETS</a
       >
@@ -117,16 +117,15 @@
   .nav-item {
     margin: 2rem 0;
   }
-
-  .tickets {
+  .flex_tickets {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
   }
-  .tickets a {
+  .flex_tickets a {
     font-size: 20px;
   }
-  .tickets a:hover {
+  .flex_tickets a:hover {
     color: #ec4dfe;
     text-shadow: 4px 3px 10px #ff1cc0;
   }
@@ -159,6 +158,9 @@
     }
     .nav-item {
       margin: 1rem 0;
+    }
+    .flex_tickets a {
+      display: none;
     }
   }
 </style>
