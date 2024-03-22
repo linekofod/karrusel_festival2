@@ -158,20 +158,20 @@
 
     /* Programmer */
     #manegen_program {
-        width: 55%;
+        width: 75%;
         top: -4%;
         left: 24%;
     }
 
     #tribunen_program {
-        width: 60%;
-        top: -39%;
-        left: 48%;
+        width: 80%;
+        top: 21%;
+        left: 18%;
     }
 
     #balkonen_program {
-        width: 60%;
-        top: -30%;
-        left: 17%;
+        width: 75%;
+        top: -15%;
+        left: 0%;
     }
 }
