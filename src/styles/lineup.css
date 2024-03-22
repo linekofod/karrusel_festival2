@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 450px));
     gap: 10px;
+    position: relative;
   }
 
 .artist_date {
@@ -22,16 +23,21 @@
     align-items: baseline;
     margin-bottom: 50px;
 }
+.wave_box {
+    position: relative;
+}
 .illustration_wave {
     position: absolute;
-    bottom: -165px;
+    top: -60px;
+    left: -100px;
     z-index: -1;
     width: 200%;
+    transform: scaleY(-1);
 }
 .illustration_woman {
     position: absolute;
-    top: 220%;
-    right: -25px;
+    bottom: 0;
+    right: 20px;
     z-index: -1;
     width: 30%;
 }
@@ -58,13 +64,13 @@
         margin-bottom: 35px;
     }
     .illustration_wave {
-        bottom: 125px;
-        left: -10px;
+        top: 0;
+        left: 20px;
     }
     .illustration_woman {
-        top: 550%;
-        width: 60%;
-        
+        bottom: -160px;
+        width: 50%;
+        right: -10px;
     }
 
 }

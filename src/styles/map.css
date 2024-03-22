@@ -108,6 +108,9 @@
 /* Mobil version */
 
 @media screen and (max-width: 600px) {
+    .background_map {
+        margin: 50px 0 20px 0;
+    }
     .festival_info {
         display: flex;
         flex-direction: column;

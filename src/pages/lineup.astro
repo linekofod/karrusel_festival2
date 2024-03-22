@@ -19,7 +19,14 @@ const data = await fetch(
 
 <MainLayout title="Lineup">
   <!-- Program Thursday -->
-  <h2 class="h2_2">THURSDAY</h2>
+  <div class="wave_box">
+    <h2 class="h2_2">THURSDAY</h2>
+    <img
+      class="illustration_wave"
+      src="../../imgs/illustrationer/pynt_boelger.svg"
+      alt=""
+    />
+  </div>
   <section class="artist_cards">
     {
       data
@@ -28,19 +35,40 @@ const data = await fetch(
           return <ArtistCards data={artist} />;
         })
     }
+  </section>
+
+  <!-- Program Friday -->
+  <div class="wave_box">
+    <h2 class="h2_2">FRIDAY</h2>
     <img
       class="illustration_wave"
       src="../../imgs/illustrationer/pynt_boelger.svg"
       alt=""
     />
-  </section>
-
-  <!-- Program Friday -->
-  <h2 class="h2_2">FRIDAY</h2>
+  </div>
   <section class="artist_cards">
     {
       data
         .filter((artist) => artist.date === "FRIDAY")
+        .map((artist) => {
+          return <ArtistCards data={artist} />;
+        })
+    }
+  </section>
+
+  <!-- Program Saturday -->
+  <div class="wave_box">
+    <h2 class="h2_2">SATURDAY</h2>
+    <img
+      class="illustration_wave"
+      src="../../imgs/illustrationer/pynt_boelger.svg"
+      alt=""
+    />
+  </div>
+  <section class="artist_cards">
+    {
+      data
+        .filter((artist) => artist.date === "SATURDAY")
         .map((artist) => {
           return <ArtistCards data={artist} />;
         })
@@ -50,17 +78,5 @@ const data = await fetch(
       src="../../imgs/illustrationer/dame_glow.svg"
       alt=""
     />
-  </section>
-
-  <!-- Program Saturday -->
-  <h2 class="h2_2">SATURDAY</h2>
-  <section class="artist_cards">
-    {
-      data
-        .filter((artist) => artist.date === "SATURDAY")
-        .map((artist) => {
-          return <ArtistCards data={artist} />;
-        })
-    }
   </section>
 </MainLayout>

@@ -5,3 +5,18 @@
         gap: 2rem;
     }
 }
+@media screen and (max-width: 700px) {
+    .grid_1-1 h2 {
+        margin-top: 30px;
+    }
+    #h2_1 {
+        margin-top: 0;
+    }
+    .grid_1-1 img {
+        margin-top: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+}

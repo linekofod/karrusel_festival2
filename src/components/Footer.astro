@@ -49,11 +49,20 @@ import Button from "../components/Button.astro";
   ul {
     list-style-type: none;
   }
+  ul li a:hover {
+    color: #ec4dfe;
+    text-shadow: 4px 3px 10px #ff1cc0;
+  }
 
   .footer_logo {
-    max-width: 80%;
+    max-width: 40%;
+    padding-bottom: 20px;
   }
   .contact {
+    padding-bottom: 20px;
+  }
+  .contact h4 {
+    padding-bottom: 10px;
   }
 
   form {
@@ -63,9 +72,12 @@ import Button from "../components/Button.astro";
     color: #ffffff;
     font-family: proxima-nova, sans-serif;
   }
+  label {
+    padding-top: 10px;
+  }
   input {
     margin-top: 0.2rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
     color: black;
     height: 2rem;
     border-radius: 0.25rem;

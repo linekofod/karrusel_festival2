@@ -24,10 +24,15 @@
     <div>
       <p>22-24 august 2024</p>
     </div>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <div class="tickets">
+      <a target="_blank" href="https://www.ticketmaster.dk/event/542817"
+        >TICKETS</a
+      >
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </nav>
 </header>
@@ -113,6 +118,18 @@
     margin: 2rem 0;
   }
 
+  .tickets {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .tickets a {
+    font-size: 20px;
+  }
+  .tickets a:hover {
+    color: #ec4dfe;
+    text-shadow: 4px 3px 10px #ff1cc0;
+  }
   .hamburger {
     display: block;
     cursor: pointer;
